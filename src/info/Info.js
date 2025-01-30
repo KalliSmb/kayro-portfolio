@@ -88,27 +88,27 @@ export const info = {
             image: mock1
         },
         {
-            title: "Project 2",
+            title: "Gastronomia & Clima",
             live: "#",
-            source: "https://github.com/kallismb/",
+            source: "https://github.com/kallismb/gastronomia-clima",
             image: mock2
         },
         {
-            title: "Project 3",
-            live: "#",
+            title: "XP Academy",
+            live: "https://www.figma.com/proto/5t9cGfrQ1gS12IuvfZzBZ7/XP-Academy?node-id=465-164&t=ki7P0sVj47PYZTYO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=465%3A164",
             source: "https://github.com/kallismb/",
             image: mock3
         },
         {
-            title: "Project 4",
+            title: "Gestão Livraria",
             live: "#",
-            source: "https://github.com/kallismb/",
+            source: "https://github.com/kallismb/gestao-livraria",
             image: mock4
         },
         {
-            title: "Project 5",
+            title: "Stock App",
             live: "#",
-            source: "https://github.com/kallismb/",
+            source: "https://github.com/kallismb/stock-app",
             image: mock5
         }
     ]
