@@ -5,7 +5,7 @@ import mock3 from "../img/mock3.png"
 import mock4 from "../img/mock4.png"
 import mock5 from "../img/mock5.png"
 
-export let colors = [" #00ffa4", " #a668ff"]; // paleta de cores - #00ffa4 #6b47f0
+export let colors = [" #00ffa4", " #a668ff"]; 
 
 export let singlePage = false;
 
@@ -52,33 +52,18 @@ export const info = {
             icon: "fa fa-twitter",
             label: 'twitter'
         }
-
     ],
     bio: "Hello! I'm Kayro. I'm a future software developer. I'm studying Web Development and Multimedia at IPCA, currently searching for an internship.",
-    skills:
-        {
-            proficientWith: ['c#', 'javascript', 'flutter', 'git', 'github', 'html5', 'css3', 'unity'],
-            exposedTo: ['nodejs', 'typescript', 'docker', 'angular'],
-            softSkills: ['teamwork', 'time-management', 'adaptability', 'resilience', 'problem-solving', 'proactivity']
-        }
-    ,
+    skills: {
+        proficientWith: ['c#', 'javascript', 'flutter', 'git', 'github', 'html5', 'css3', 'unity'],
+        exposedTo: ['nodejs', 'typescript', 'docker', 'angular'],
+        softSkills: ['teamwork', 'time-management', 'adaptability', 'resilience', 'problem-solving', 'proactivity']
+    },
     hobbies: [
-        {
-            label: 'gaming',
-            emoji: '🎮'
-        },
-        {
-            label: 'football',
-            emoji: '⚽'
-        },
-        {
-            label: 'cooking',
-            emoji: '🔪'
-        },
-        {
-            label: 'music',
-            emoji: '🎵'
-        }
+        { label: 'gaming', emoji: '🎮' },
+        { label: 'football', emoji: '⚽' },
+        { label: 'cooking', emoji: '🔪' },
+        { label: 'music', emoji: '🎵' }
     ],
     portfolio: [
         {
@@ -86,35 +71,40 @@ export const info = {
             live: "https://kayrobarbosa.netlify.app",
             source: "https://github.com/kallismb/kayro-portfolio",
             image: mock1,
-            description: "This is my personal portfolio, showcasing the some of the projects I have worked on. (University Project - Web Design Introduction)"
+            description: "This is my personal portfolio, showcasing some of the projects I have worked on.",
+            technologies: ['JavaScript', 'React', 'SCSS']
         },
         {
             title: "Gastronomia & Clima",
             live: "#",
             source: "https://github.com/kallismb/gastronomia-clima",
             image: mock2,
-            description: "A web app using NodeJS and Supabase database that connects gastronomy and weather APIs to suggest restaurants based on the weather. (University Project - Distributed Computing)"
+            description: "A web app using NodeJS and Supabase database.",
+            technologies: ['JavaScript', 'NodeJS', 'ExpressJS', 'Supabase', 'Docker', 'CSS']
         },
         {
             title: "Stock App",
             live: "#",
             source: "https://github.com/kallismb/stock-app",
             image: mock3,
-            description: "A React app for tracking stock prices with real-time data integration. (University Project - Web Development II)"
+            description: "A React app for tracking stock prices.",
+            technologies: ['JavaScript', 'React', 'CSS']
         },
         {
             title: "Gestão Livraria",
             live: "#",
             source: "https://github.com/kallismb/gestao-livraria",
             image: mock4,
-            description: "A C# .NET Console App for managing a library system. (University Project - Programming Languages I)"
+            description: "A C# .NET Console App for managing a library system.",
+            technologies: ['C#']
         },
         {
             title: "XP Academy",
             live: "#",
             source: "https://www.behance.net/gallery/218138889/XP-Academy-Projeto",
             image: mock5,
-            description: "An e-learning gamified platform to develop skills and growth in various subjects. (University Project - Web Design Introduction)"
+            description: "An e-learning gamified platform to develop skills.",
+            technologies: ['Figma']
         }
     ]
 }
