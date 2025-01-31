@@ -1,70 +1,64 @@
 import React, { useState } from 'react';
-import IconLink from "./IconLink";
-import { Box } from "@mui/material";
+import { Box, Typography, Button } from '@mui/material';
 
-function PortfolioBlock(props) {
-    const { image, live, source, title, description } = props;
-    const [hovered, setHovered] = useState(false);
+function PortfolioBlock({ image, source, title, description }) {
+    const [hover, setHover] = useState(false);
 
     return (
         <Box 
-            display={'flex'} 
-            flexDirection={'column'} 
-            justifyContent={'center'} 
-            alignItems={'center'} 
-            position={'relative'} 
-            width={'100%'}
+            position="relative"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            sx={{ 
+                overflow: 'hidden',
+                borderRadius: '10px',
+                transition: 'transform 0.3s ease',
+                '&:hover': { transform: 'scale(1.05)' } // Efeito de zoom
+            }}
         >
-            <Box
-                position={'relative'}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-                width={'100%'}
-                maxWidth={'500px'}
-                display={'inline-block'}
-            >
+            {/* Imagem do projeto */}
+            <Box 
+                component="img" 
+                src={image} 
+                alt={title} 
+                width="100%" 
+                sx={{ borderRadius: '10px' }}
+            />
+
+            {/* Sobreposição ao passar o cursor */}
+            {hover && (
                 <Box 
-                    component={'img'} 
-                    src={image} 
-                    alt={'mockup'} 
-                    style={{
-                        maxWidth: '100%',
-                        height: 'auto',
-                        borderRadius: '10px',
-                        transition: 'transform 0.3s ease',
-                        transform: hovered ? 'scale(1.1)' : 'scale(1)',
-                    }}
-                />
-                {hovered && (
-                    <Box 
-                        position={'absolute'} 
-                        top={0} 
-                        left={0} 
-                        width={'100%'} 
-                        height={'100%'} 
-                        bgcolor={'rgba(39, 36, 47, 0.75)'} 
-                        color={'#fff'} 
-                        display={'flex'} 
-                        flexDirection={'column'} 
-                        justifyContent={'center'} 
-                        alignItems={'center'} 
-                        borderRadius={'10px'}
-                        zIndex={1}
-                        p={2}
+                    position="absolute" 
+                    top={0} left={0} width="100%" height="100%"
+                    bgcolor="rgba(0, 0, 0, 0.8)"
+                    display="flex" flexDirection="column"
+                    justifyContent="center" alignItems="center"
+                    sx={{ borderRadius: '10px' }}
+                >
+                    <Typography 
+                        variant="h6" 
+                        color="#00ffa4"
+                        fontWeight="bold"
+                        sx={{ mb: 2 }} // Margem inferior para espaçamento
                     >
-                        <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{title}</h2>
-                        <p style={{ fontSize: '1rem', marginBottom: '1.5rem' }}>{description}</p>
-                        <Box display={'flex'} gap={'1rem'}>
-                            <Box p={1} border={'2px solid white'} borderRadius={'25px'}>
-                                <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'} />
-                            </Box>
-                            <Box p={1} border={'2px solid white'} borderRadius={'25px'}>
-                                <IconLink link={source} title={'Source Code'} icon={'fa fa-code'} />
-                            </Box>
-                        </Box>
-                    </Box>
-                )}
-            </Box>
+                        {title}
+                    </Typography>
+                    <Typography color="#ffffff" textAlign="center" sx={{ px: 2, mb: 2 }}>
+                        {description}
+                    </Typography>
+                    <Button 
+                        variant="contained" 
+                        href={source} 
+                        target="_blank" 
+                        sx={{
+                            bgcolor: '#6b47f0',
+                            '&:hover': { bgcolor: 'rgba(108, 71, 240, 0.7)' }
+                        }}
+                    >
+                        Source Code
+                    </Button>
+                </Box>
+            )}
         </Box>
     );
 }
