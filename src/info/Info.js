@@ -83,8 +83,8 @@ export const info = {
     portfolio: [
         {
             title: "Personal Portfolio",
-            live: "https://github.com/kallismb/portfolio",
-            source: "https://github.com/kallismb/portfolio",
+            live: "https://kayrobarbosa.netlify.app",
+            source: "https://github.com/kallismb/kayro-portfolio",
             image: mock1
         },
         {
@@ -94,9 +94,9 @@ export const info = {
             image: mock2
         },
         {
-            title: "XP Academy",
-            live: "https://www.figma.com/proto/5t9cGfrQ1gS12IuvfZzBZ7/XP-Academy?node-id=465-164&t=ki7P0sVj47PYZTYO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=465%3A164",
-            source: "https://github.com/kallismb/",
+            title: "Stock App",
+            live: "#",
+            source: "https://github.com/kallismb/stock-app",
             image: mock3
         },
         {
@@ -106,9 +106,9 @@ export const info = {
             image: mock4
         },
         {
-            title: "Stock App",
+            title: "XP Academy",
             live: "#",
-            source: "https://github.com/kallismb/stock-app",
+            source: "https://www.behance.net/gallery/218138889/XP-Academy-Projeto",
             image: mock5
         }
     ]
