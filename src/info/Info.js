@@ -5,7 +5,7 @@ import mock3 from "../img/mock3.png"
 import mock4 from "../img/mock4.png"
 import mock5 from "../img/mock5.png"
 
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"]; // paleta de cores
+export let colors = ["#00ffa4", "#a668ff"]; // paleta de cores
 
 export let singlePage = false;
 
@@ -48,9 +48,9 @@ export const info = {
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
+            link: "https://www.behance.net/kayrobarbosa",
+            icon: "fa fa-behance",
+            label: 'behance'
         }
 
     ],
