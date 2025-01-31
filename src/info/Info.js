@@ -48,9 +48,9 @@ export const info = {
             label: 'linkedin'
         },
         {
-            link: "https://www.behance.net/kayrobarbosa",
-            icon: "fa fa-behance",
-            label: 'behance'
+            link: "https://x.com",
+            icon: "fa fa-twitter",
+            label: 'twitter'
         }
 
     ],
