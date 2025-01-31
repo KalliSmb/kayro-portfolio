@@ -52,11 +52,15 @@ function PortfolioBlock({ image, source, title, description }) {
                         target="_blank" 
                         sx={{
                             bgcolor: '#6b47f0',
-                            '&:hover': { bgcolor: 'rgba(108, 71, 240, 0.7)' }
+                            '&:hover': { bgcolor: 'rgba(108, 71, 240, 0.7)' },
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem'
                         }}
-                    >
-                        Source Code
-                    </Button>
+                     >
+                        <i className='fa fa-code' style={{ fontSize: '1rem' }} />
+                           Source Code
+                     </Button>
                 </Box>
             )}
         </Box>
