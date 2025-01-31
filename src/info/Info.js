@@ -85,31 +85,36 @@ export const info = {
             title: "Personal Portfolio",
             live: "https://kayrobarbosa.netlify.app",
             source: "https://github.com/kallismb/kayro-portfolio",
-            image: mock1
+            image: mock1,
+            description: "This is my personal portfolio, showcasing the some of the projects I have worked on. (University Project - Web Design Introduction)"
         },
         {
             title: "Gastronomia & Clima",
             live: "#",
             source: "https://github.com/kallismb/gastronomia-clima",
-            image: mock2
+            image: mock2,
+            description: "A web app using NodeJS and Supabase database that connects gastronomy and weather APIs to suggest restaurants based on the weather. (University Project - Distributed Computing)"
         },
         {
             title: "Stock App",
             live: "#",
             source: "https://github.com/kallismb/stock-app",
-            image: mock3
+            image: mock3,
+            description: "A React app for tracking stock prices with real-time data integration. (University Project - Web Development II)"
         },
         {
             title: "Gestão Livraria",
             live: "#",
             source: "https://github.com/kallismb/gestao-livraria",
-            image: mock4
+            image: mock4,
+            description: "A C# .NET Console App for managing a library system. (University Project - Programming Languages I)"
         },
         {
             title: "XP Academy",
             live: "#",
             source: "https://www.behance.net/gallery/218138889/XP-Academy-Projeto",
-            image: mock5
+            image: mock5,
+            description: "An e-learning gamified platform to develop skills and growth in various subjects. (University Project - Web Design Introduction)"
         }
     ]
 }
