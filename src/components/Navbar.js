@@ -27,6 +27,11 @@ const links = [
         name: 'Portfolio',
         to: 'portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'CV',
+        type: 'download',
+        href: '/Kayro CV.pdf'
     }
 ]
 
@@ -36,9 +41,7 @@ const scrollWidthOffset = (el) => {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
 
-
 export default function Navbar({ darkMode, handleClick, active, setActive }) {
-
     return (
         <Box component={'nav'} width={'100%'} position={singlePage ? 'fixed' : 'relative'} className={darkMode? Style.dark : Style.light}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
@@ -47,13 +50,19 @@ export default function Navbar({ darkMode, handleClick, active, setActive }) {
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
                         sx={{ borderImageSource: info.gradient }}>
-                        <Link to={singlePage ? `#${link.to}` : `/${link.to}`}
-                        scroll={el => scrollWidthOffset(el)}
-                            smooth
-                            onClick={() => setActive(link.active)} className={Style.link}>
-                            {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
-                        </Link>
+                        {link.type === 'download' ? (
+                            <a href={link.href} download className={Style.link} style={{ padding: '0.5rem 0' }}>
+                                {link.name}
+                            </a>
+                        ) : (
+                            <Link to={singlePage ? `#${link.to}` : `/${link.to}`}
+                            scroll={el => scrollWidthOffset(el)}
+                                smooth
+                                onClick={() => setActive(link.active)} className={Style.link}>
+                                {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
+                                {link.type && link.type !== 'download' && <h1>{link.name}</h1>}
+                            </Link>
+                        )}
                     </Box>
                 ))}
                 <li>
