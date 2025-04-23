@@ -53,7 +53,7 @@ export const info = {
             label: 'twitter'
         }
     ],
-    bio: "Hello! I'm Kayro. I'm a future software developer. I'm studying Web Development and Multimedia at IPCA, currently searching for an internship.",
+    bio: "Hello! My name is Kayro. I'm 20 years old and I'm studying Web Development and Multimedia at IPCA, currently in a curricular internship at IOTech.",
     skills: {
         proficientWith: ['c#', 'javascript', 'flutter', 'git', 'github', 'html5', 'css3', 'unity'],
         exposedTo: ['nodejs', 'typescript', 'docker', 'angular'],
