@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/package.json"
+    schedule:
+      interval: "weekly"      # daily, weekly, monthly
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "express"
+        versions: ["5.x"]     # Exemplo de ignorar versões específicas
