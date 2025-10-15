@@ -46,20 +46,16 @@ export const info = {
             link: "https://linkedin.com/in/kayro-barbosa",
             icon: "fa fa-linkedin",
             label: 'linkedin'
-        },
-        {
-            link: "https://x.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
         }
     ],
-    bio: "Hello! My name is Kayro. I'm 20 years old and I'm studying Web Development and Multimedia at IPCA, currently in a curricular internship at IOTech.",
+    bio: "Hello! I'm Kayro, a 21 years old Software Developer who loves learning new things and is always looking for new challenges. I'm recently graduated in Web Development and Multimedia from IPCA. Currently open to job opportunities or professional internships in Software Development.",
     skills: {
-        proficientWith: ['c#', 'javascript', 'flutter', 'git', 'github', 'html5', 'css3', 'unity'],
-        exposedTo: ['nodejs', 'typescript', 'docker', 'angular'],
+        proficientWith: ['c#', 'javascript', 'flutter', 'react', 'strapi', 'html5', 'css3', 'mysql'],
+        exposedTo: ['nodejs', 'typescript', 'vuejs', 'php', 'angular', 'unity'],
         softSkills: ['teamwork', 'time-management', 'adaptability', 'resilience', 'problem-solving', 'proactivity']
     },
     hobbies: [
+        { label: 'gym', emoji: '💪' },
         { label: 'gaming', emoji: '🎮' },
         { label: 'football', emoji: '⚽' },
         { label: 'cooking', emoji: '🔪' },
@@ -103,7 +99,7 @@ export const info = {
             live: "#",
             source: "https://www.behance.net/gallery/218138889/XP-Academy-Projeto",
             image: mock5,
-            description: "An e-learning gamified platform to develop skills.",
+            description: "Visual Identity for an e-learning gamified platform to develop skills in various areas.",
             technologies: ['Figma']
         }
     ]
