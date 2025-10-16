@@ -31,7 +31,7 @@ const links = [
     {
         name: 'CV',
         type: 'download',
-        href: '/Kayro CV.pdf'
+        href: '/kayro-barbosa-cv.pdf'
     }
 ]
 
